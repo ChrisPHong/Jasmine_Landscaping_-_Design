@@ -34,6 +34,15 @@ const NavBar = () => {
 
           </div>
           <div className='AboutUs-Container'>
+            <NavLink to='/Contact' exact={true} activeClassName='active'>
+              <p className='nav-tag'>
+                Contact
+              </p>
+            </NavLink>
+
+
+          </div>
+          <div className='AboutUs-Container'>
             <NavLink to='/photos' exact={true} activeClassName='active'>
               <p className='nav-tag'>
                 Photos
