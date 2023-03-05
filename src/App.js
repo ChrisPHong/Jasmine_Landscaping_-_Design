@@ -1,17 +1,20 @@
 import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SplashPage from './components/SplashPage';
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+  <NavBar></NavBar>
+      <Routes>
 
-        <div className="App">
-          <SplashPage />
-        </div>
-    </BrowserRouter>
+        <Route path='/' element={<SplashPage />} />
+
+      </Routes>
+    </>
   );
 }
 
