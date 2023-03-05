@@ -1,0 +1,48 @@
+.contactLogo{
+ width: 20px;
+
+}
+
+
+.Logo-Container{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+
+
+}
+
+
+.contact-Container{
+display: flex;
+flex-direction: row;
+
+}
+
+.email-logo{
+    display: flex;
+    align-items: center;
+}
+
+.instagram-logo{
+    display: flex;
+    align-items: center;
+}
+
+.email-ptag{
+    font-size: 10px;
+    margin-left: 8px;
+    text-decoration: none;
+
+}
+
+
+.link-p{
+text-decoration: none;
+
+}
+
+.Contact-Us-Container{
+    border-top: 1px solid black;
+    padding-left: 10px;
+}

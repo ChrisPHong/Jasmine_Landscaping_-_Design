@@ -1,0 +1,18 @@
+.AboutUs-p-tag{
+    text-decoration: none;
+    color: black;
+
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+.selfie{
+    width: 300px;
+}
+
+
+
