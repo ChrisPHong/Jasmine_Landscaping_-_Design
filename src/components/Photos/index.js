@@ -98,16 +98,19 @@ const Photos = () => {
         pic81, pic82, pic83];
 
     return (
-        <div className='AllPhotos-div'>
-            {storage.map((photo, idx) => {
-                return (
-                    <div key={idx}>
+        <div className='Photo-Container'>
 
-                        <SinglePhoto photo={photo} />
+            <div className='AllPhotos-div'>
+                {storage.map((photo, idx) => {
+                    return (
+                        <div key={idx}>
 
-                    </div>
-                )
-            })}
+                            <SinglePhoto photo={photo} />
+
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 };
