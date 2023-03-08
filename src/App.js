@@ -7,6 +7,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 import Contact from './components/Contact';
+import Photos from './components/Photos';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<SplashPage />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/photos' element={<Photos/>} />
 
 
       </Routes>
