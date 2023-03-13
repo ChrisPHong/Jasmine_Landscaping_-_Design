@@ -43,6 +43,16 @@ text-decoration: none;
 }
 
 .Contact-Us-Container{
-    border-top: 1px solid black;
+
     padding-left: 10px;
+    max-width: fit-content;
+}
+
+.Footer-Container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    border-top: 2px solid black;
 }
