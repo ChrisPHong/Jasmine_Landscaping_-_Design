@@ -11,38 +11,6 @@ const Footer = () => {
         <>
             <div className="Footer-Container">
 
-                <div className="Contact-Us-Container">
-                    <p className="font-link">
-                        Contact Us
-                    </p>
-                    <div className="Logo-Container">
-                        <div className="contact-Container">
-                            <div className="email-logo">
-                                <a className='link-p' href="mailto:JamesSoonHong@gmail.com">
-                                    <img className="contactLogo" src={emailLogo} />
-                                </a>
-                            </div>
-                            <p className="email-ptag">
-                                <a className='link-p' href="mailto:JamesSoonHong@gmail.com">
-                                    JamesSoonHong@gmail.com
-                                </a>
-                            </p>
-                        </div>
-                        <div className="contact-Container">
-                            <a className='link-p' href={`https://www.instagram.com/jasminelandscapedesign/?hl=en`}>
-                                <div className="instagram-logo">
-
-                                    <img className="contactLogo" src={instaLogo} />
-                                    <p className="email-ptag">
-                                        instagram
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        {/* <img className="contactLogo" src={phoneLogo} /> */}
-                    </div>
-
-                </div>
 
                 <div className="Jasmine-Landscaping-Container">
                     <p className="font-link">
@@ -70,11 +38,44 @@ const Footer = () => {
 
                 </div>
 
+                <div className="Support-Container">
+                    <p>Support</p>
+
+                        <NavLink to='/Contact' exact={true} activeClassName='active'>
+                            <p>
+                                Contact
+                            </p>
+                        </NavLink>
+                </div>
+
                 <div className="Social-Container">
                     <p className="font-link">
                         Social
                     </p>
 
+                    <div className="contact-Container">
+                        <div className="email-logo">
+                            <a className='link-p' href="mailto:JamesSoonHong@gmail.com">
+                                <img className="contactLogo" src={emailLogo} />
+                            </a>
+                        </div>
+                        <p className="email-ptag">
+                            <a className='link-p' href="mailto:JamesSoonHong@gmail.com">
+                                JamesSoonHong@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    <div className="contact-Container">
+                        <a className='link-p' href={`https://www.instagram.com/jasminelandscapedesign/?hl=en`}>
+                            <div className="instagram-logo">
+
+                                <img className="contactLogo" src={instaLogo} />
+                                <p className="email-ptag">
+                                    instagram
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
             </div>
