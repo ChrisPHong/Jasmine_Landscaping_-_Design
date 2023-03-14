@@ -52,7 +52,11 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     margin: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:flex-start;
     border-top: 2px solid black;
+}
+
+.Social-Container{
+margin-right: 200px;
 }

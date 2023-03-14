@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Contact from './components/Contact';
 import Photos from './components/Photos';
 
+
 function App() {
   return (
     <>
