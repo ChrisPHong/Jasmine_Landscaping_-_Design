@@ -97,18 +97,26 @@ const Photos = () => {
         pic63, pic65, pic66, pic67, pic68, pic69, pic70, pic71,
         pic72, pic73, pic74, pic75, pic76, pic77, pic78, pic79, pic80,
         pic81, pic82, pic83];
+    const photos1 = storage.slice(0, 20)
+    const photos2 = storage.slice(20, 40)
+    const photos3 = storage.slice(40, 60)
+    const photos4 = storage.slice(60)
+
 
 // did not use pic64, pic19, pic36
-        console.log(storage.length)
         const [page1, setPage1] = useState(true);
-        const [page2, setPage2] = useState(true);
-        const [page3, setPage3] = useState(true);
-        const [page4, setPage4] = useState(true);
+        const [page2, setPage2] = useState(false);
+        const [page3, setPage3] = useState(false);
+        const [page4, setPage4] = useState(false);
 
     return (
         <div className='Photo-Container'>
 
             <div className='AllPhotos-div'>
+                <PagePhotos photos={photos1}/>
+                <PagePhotos photos={photos2}/>
+                <PagePhotos photos={photos3}/>
+                <PagePhotos photos={photos4}/>
 
                 {storage.map((photo, idx) => {
                     return (

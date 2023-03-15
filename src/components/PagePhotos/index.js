@@ -1,7 +1,8 @@
 
 
 
-const PagePhotos = (props) =>{
+const PagePhotos = ({photos}) =>{
+    console.log(photos)
     return (
         <>
 
