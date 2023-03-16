@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useEffect, useState } from "react";
 import pic1 from './photo/pic1.jpg';
 import pic2 from './photo/pic2.jpg';
 import pic3 from './photo/pic3.jpg';
@@ -84,32 +84,71 @@ import pic82 from './photo/pic82.jpg';
 import pic83 from './photo/pic83.jpg';
 import SinglePhoto from '../SinglePhoto';
 import './Photos.css'
+import PagePhotos from '../PagePhotos';
 
 const Photos = () => {
     const storage = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8,
         pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17,
-        pic18, pic19, pic20, pic21, pic22, pic23, pic24, pic25, pic26,
+        pic18, pic20, pic21, pic22, pic23, pic24, pic25, pic26,
         pic27, pic28, pic29, pic30, pic31, pic32, pic33, pic34, pic35,
-        pic36, pic37, pic38, pic39, pic40, pic41, pic42, pic43, pic44,
+        pic37, pic38, pic39, pic40, pic41, pic42, pic43, pic44,
         pic45, pic46, pic47, pic48, pic49, pic50, pic51, pic52, pic53,
         pic54, pic55, pic56, pic57, pic58, pic59, pic60, pic61, pic62,
-        pic63, pic64, pic65, pic66, pic67, pic68, pic69, pic70, pic71,
+        pic63, pic65, pic66, pic67, pic68, pic69, pic70, pic71,
         pic72, pic73, pic74, pic75, pic76, pic77, pic78, pic79, pic80,
         pic81, pic82, pic83];
+    const photos1 = storage.slice(0, 20)
+    const photos2 = storage.slice(20, 40)
+    const photos3 = storage.slice(40, 60)
+    const photos4 = storage.slice(60)
+
+
+    // did not use pic64, pic19, pic36
+    const [toggleState, setToggleState] = useState(1);
+
+    const togglePage = (idx) => {
+        console.log(idx)
+        setToggleState(idx);
+    }
+
 
     return (
-        <div className='Photo-Container'>
+        <div className="Full-Container">
 
-            <div className='AllPhotos-div'>
-                {storage.map((photo, idx) => {
-                    return (
-                        <div key={idx}>
+            <div className="button-container">
+                <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
+                <button onClick={() => togglePage(2)} className={toggleState === 2 ? "page-button active-button" : "page-button"}>2</button>
+                <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
+                <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
+                </div>
+                <div className='Photo-Container'>
 
-                            <SinglePhoto photo={photo} />
+                <div className='AllPhotos-div'>
+                    <div className={toggleState === 1 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos1} />
+                    </div>
 
-                        </div>
-                    )
-                })}
+                    <div className={toggleState === 2 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos2} />
+                    </div>
+
+                    <div className={toggleState === 3 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos3} />
+                    </div>
+
+                    <div className={toggleState === 4 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos4} />
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div className="button-container">
+                <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
+                <button onClick={() => togglePage(2)} className={toggleState === 2 ? "page-button active-button" : "page-button"}>2</button>
+                <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
+                <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
             </div>
         </div>
     )

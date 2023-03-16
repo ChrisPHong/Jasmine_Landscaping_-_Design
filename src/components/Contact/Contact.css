@@ -4,3 +4,10 @@
     justify-content: flex-start;
 
 }
+
+
+.Contact-Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
