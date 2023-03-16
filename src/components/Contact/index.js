@@ -19,33 +19,41 @@ const Contact = () => {
             <div className='instagram-Container'>
                 <p>storage</p>
             </div>
-        <div className="form-container">
-            <form
-                onSubmit={sendEmail}>
-                <div className='form-div'>
-                    <label>
-                        <input type="text" placeholder="First Name" name="first_name" />
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Last Name" name="last_name" />
-                    </label>
-                    <label>
-                        <input type="email" placeholder="Email Address" name="email" />
-                    </label>
-                    <label>
-                        <input type="numbers" placeholder="Phone Number" name="phone" />
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Message" name="message" />
-                    </label>
-                    <input type="submit" value="Send Message"></input>
-                </div>
+            <div className="form-container">
+                <form
+                    onSubmit={sendEmail}>
+                    <div className='form-div'>
+                        <label className='custom-field'>
+                            <input type="text" name="first_name"  required/>
+                            <span class="placeholder">First Name</span>
+                        </label>
+                        <label className='custom-field'>
+                            <input type="text" name="last_name"  required/>
+                            <span class="placeholder">Last Name</span>
+                        </label>
+                        <label className='custom-field'>
+                            <input type="text" name="email" required />
+                            <span class="placeholder">Email</span>
+                        </label>
+                        <label className='custom-field'>
+                            <input type="numbers" name="phone"  required/>
+                            <span class="placeholder">Phone Number</span>
+                        </label>
+                        <label className='custom-field'>
+                            <input type="text" name="message"  required/>
+                            <span class="placeholder">Message</span>
 
-            </form>
-
-        </div>
+                            <span class="placeholder"></span>
+                        </label>
+                        <input type="submit" value="Send Message"></input>
 
                     </div>
+
+                </form>
+
+            </div>
+
+        </div>
     )
 };
 
