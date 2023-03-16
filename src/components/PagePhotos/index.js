@@ -1,10 +1,20 @@
+import SinglePhoto from "../SinglePhoto"
 
 
+const PagePhotos = ({ photos, page }) => {
 
-const PagePhotos = ({photos}) =>{
-    console.log(photos)
     return (
         <>
+
+            {photos.map((photo, idx) => {
+                return (
+                    <div key={idx}>
+
+                        <SinglePhoto photo={photo} />
+
+                    </div>
+                )
+            })}
 
         </>
     )

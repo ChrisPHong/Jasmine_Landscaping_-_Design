@@ -1,4 +1,4 @@
-.AllPhotos-div{
+.AllPhotos-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,9 +11,57 @@
 }
 
 
-.Photo-Container{
+.Photo-Container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(49, 49, 49, 0.795);
+}
+
+.page {
+    display: none;
+}
+
+.active-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 5px 5px;
+}
+
+.page-button {
+    border: 1px solid black;
+    padding: 10px 100px;
+    border-radius: 5px;
+    margin: 5px 5px;
+
+    font-family: sans-serif;
+    transition-duration: 1.3s;
+    font-weight: bold;
+
+}
+
+.page-button:hover {
+    background-color: rgb(50, 53, 53, .4);
+    cursor: pointer;
+}
+.active-button{
+    border: 1px solid black;
+
+    padding: 10px 100px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    background-color: hsla(120, 2%, 8%, 0.3);
+    font-family: sans-serif;
+    transition-duration: 1.3s;
+    font-weight: bold;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

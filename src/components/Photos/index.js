@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import pic1 from './photo/pic1.jpg';
 import pic2 from './photo/pic2.jpg';
 import pic3 from './photo/pic3.jpg';
@@ -103,30 +103,52 @@ const Photos = () => {
     const photos4 = storage.slice(60)
 
 
-// did not use pic64, pic19, pic36
-        const [page1, setPage1] = useState(true);
-        const [page2, setPage2] = useState(false);
-        const [page3, setPage3] = useState(false);
-        const [page4, setPage4] = useState(false);
+    // did not use pic64, pic19, pic36
+    const [toggleState, setToggleState] = useState(1);
+
+    const togglePage = (idx) => {
+        console.log(idx)
+        setToggleState(idx);
+    }
+
 
     return (
-        <div className='Photo-Container'>
+        <div className="Full-Container">
 
-            <div className='AllPhotos-div'>
-                <PagePhotos photos={photos1}/>
-                <PagePhotos photos={photos2}/>
-                <PagePhotos photos={photos3}/>
-                <PagePhotos photos={photos4}/>
+            <div className="button-container">
+                <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
+                <button onClick={() => togglePage(2)} className={toggleState === 2 ? "page-button active-button" : "page-button"}>2</button>
+                <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
+                <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
+                </div>
+                <div className='Photo-Container'>
 
-                {storage.map((photo, idx) => {
-                    return (
-                        <div key={idx}>
+                <div className='AllPhotos-div'>
+                    <div className={toggleState === 1 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos1} />
+                    </div>
 
-                            <SinglePhoto photo={photo} />
+                    <div className={toggleState === 2 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos2} />
+                    </div>
 
-                        </div>
-                    )
-                })}
+                    <div className={toggleState === 3 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos3} />
+                    </div>
+
+                    <div className={toggleState === 4 ? "page active-page" : "page"}>
+                        <PagePhotos photos={photos4} />
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div className="button-container">
+                <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
+                <button onClick={() => togglePage(2)} className={toggleState === 2 ? "page-button active-button" : "page-button"}>2</button>
+                <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
+                <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
             </div>
         </div>
     )
