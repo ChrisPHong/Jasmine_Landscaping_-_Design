@@ -4,10 +4,115 @@
     justify-content: flex-start;
 
 }
+p{
+    font-family: sans-serif;
+}
 
 
 .Contact-Container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
+}
+
+.custom-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.custom-field input, .textarea-input{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none;
+    -mox-appearance: none;
+    appearance: none;
+    background: #fff;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+}
+
+input::placeholder{
+    color: #222
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    transition:
+    top 0.3s ease,
+    top 0.3s ease,
+    top 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top:10px;
+    font-size: 10px;
+    color: #222;
+}
+
+.custom-field.one input, .textarea-input{
+    background-color: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.custom-field.one input:valid,
+.custom-field.one input:focus{
+    border-color: #222;
+    transition-delay: 0.1s;
+}
+
+.custom-field.one input + .placeholder{
+    padding: 0 5px;
+    left: 8px;
+}
+.custom-field.one input:valid + .placeholder,
+.custom-field.one input:focus + .placeholder{
+    top: 20px;
+    background: #fff;
+}
+
+
+
+.submit-button{
+    margin-top: 10px;
+    padding: 15px 20px;
+    transition-duration: 1.3s;
+    color: white;
+    border: 1px solid #222;
+    border-radius: 3px;
+    background-color: rgb(111, 226, 58);
+}
+
+
+.submit-button:hover{
+    cursor: pointer;
+    background-color: rgb(96, 192, 51);
+}
+
+.textarea-input{
+    resize: none;
+    margin-top: 14px;
+    border-color: #222;
+}
+
+textarea::placeholder{
+    font-family: sans-serif;
+    color: rgb(44, 44, 44);
+}
+
+.h1-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
 }
