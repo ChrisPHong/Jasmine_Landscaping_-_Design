@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './SplashPage.css'
 import splashPhoto from './splashpage.jpg'
 
@@ -7,7 +8,10 @@ const SplashPage = () => {
             <div className='full-container'>
                 <div>
                     <img className='SplashPhoto' src={splashPhoto} />
-                    <p className='company-name'>Jasmine Landscaping & Design</p>
+                    <h1 className='company-name'>Jasmine Landscaping & Design</h1>
+
+                    <NavLink to='/Contact'>Contact</NavLink>
+                    {/* <p className='company-name'>Jasmine Landscaping & Design</p> */}
                 </div>
             </div>
         </>
