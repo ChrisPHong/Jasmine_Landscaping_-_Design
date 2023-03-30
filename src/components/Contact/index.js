@@ -10,14 +10,16 @@ const Contact = () => {
     const [phoneNumber, setphoneNumber] = useState('');
     const [message, setMessage] = useState('');
 
+    const [show, setShow] = useState(false);
+
 
     const sendEmail = (e) => {
         e.preventDefault();
         if (errors.length > 0) {
-
+            setShow(true)
             return;
         } else {
-
+            console.log('sent');
 
             // emailjs.sendForm('service_qo7ioim', 'template_ybhyw45', e.target, 'bVwjn2fVYUy3phcPs')
             // .then((result) => {
@@ -32,11 +34,14 @@ const Contact = () => {
 
     useEffect(()=>{
         let error = [];
+        let regexEmail = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
         if(firstName.length < 1) error.push('Provide A First Name')
+        if(firstName.replace(/\s/g, '').length < 1) error.push('Provide a First Name')
         if(lastName.length < 1) error.push('Provide A Last Name')
-        if(email.length < 1) error.push('Provide A Valid Email')
+        if(lastName.replace(/\s/g, '').length < 1) error.push('Provide a Last Name')
+        if(regexEmail.test(email) < 1) error.push('Provide A Valid Email')
         if(phoneNumber.length < 0) error.push('Provide A Phone Number')
-        if(!phoneNumber.length === 10) error.push('Provide A Valid Phone Number')
+        if(phoneNumber.length != 10) error.push('Provide A Valid Phone Number')
         if(message.length < 0) error.push('Provide A Message')
 
         setErrors(error)
@@ -51,6 +56,17 @@ const Contact = () => {
 
                     <h1>Contact Us</h1>
                 </div>
+            <div>
+               {show ? errors.map((error)=> {
+                    return(
+                        <>
+                        <li style={{color:"red"}}>
+                            {error}
+                            </li>
+                        </>
+                    )
+                }) : null}
+            </div>
                 <form
                     onSubmit={sendEmail}>
                     <div className='form-div'>

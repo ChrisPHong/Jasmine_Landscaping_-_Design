@@ -40,5 +40,6 @@
 .nav-tag {
     text-decoration: none;
     transition-duration: .5s;
-    color: grey;
+    color: black;
+    
 }

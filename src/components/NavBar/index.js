@@ -20,8 +20,8 @@ const NavBar = () => {
 
           <div className='right-container'>
 
-            <div className='AboutUs-Container'>
-              <NavLink to='/AboutUs' exact={true} activeClassName='active'>
+            <div className='AboutUs-Container' >
+              <NavLink to='/AboutUs' exact={true} style={{ textDecoration: 'none' }} activeClassName='active'>
                 <p className='nav-tag'>
                   About Us
                 </p>
@@ -29,7 +29,7 @@ const NavBar = () => {
             </div>
 
             <div className='AboutUs-Container'>
-              <NavLink to='/Services' exact={true} activeClassName='active'>
+              <NavLink to='/Services' exact={true} style={{ textDecoration: 'none' }} activeClassName='active'>
                 <p className='nav-tag'>
                   Services
                 </p>
@@ -38,7 +38,7 @@ const NavBar = () => {
 
             </div>
             <div className='AboutUs-Container'>
-              <NavLink to='/Contact' exact={true} activeClassName='active'>
+              <NavLink to='/Contact' exact={true} style={{ textDecoration: 'none' }} activeClassName='active'>
                 <p className='nav-tag'>
                   Contact
                 </p>
@@ -47,7 +47,7 @@ const NavBar = () => {
 
             </div>
             <div className='AboutUs-Container'>
-              <NavLink to='/photos' exact={true} activeClassName='active'>
+              <NavLink to='/photos' exact={true} style={{ textDecoration: 'none' }} activeClassName='active'>
                 <p className='nav-tag'>
                   Photos
                 </p>
