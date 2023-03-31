@@ -114,6 +114,11 @@ const Photos = () => {
 
     return (
         <div className="Full-Container">
+            <div>
+            <div className="button-page-container">
+                <div>
+
+                </div>
 
             <div className="button-container">
                 <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
@@ -121,6 +126,8 @@ const Photos = () => {
                 <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
                 <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
                 </div>
+            </div>
+            </div>
                 <div className='Photo-Container'>
 
                 <div className='AllPhotos-div'>
@@ -143,12 +150,14 @@ const Photos = () => {
 
                 </div>
             </div>
-
+            <div className="button-page-container">
+<div></div>
             <div className="button-container">
                 <button onClick={() => togglePage(1)} className={toggleState === 1 ? "page-button active-button" : "page-button"}>1</button>
                 <button onClick={() => togglePage(2)} className={toggleState === 2 ? "page-button active-button" : "page-button"}>2</button>
                 <button onClick={() => togglePage(3)} className={toggleState === 3 ? "page-button active-button" : "page-button"}>3</button>
                 <button onClick={() => togglePage(4)} className={toggleState === 4 ? "page-button active-button" : "page-button"}>4</button>
+            </div>
             </div>
         </div>
     )

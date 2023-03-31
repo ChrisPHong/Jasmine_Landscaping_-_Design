@@ -14,3 +14,28 @@
 .selfie{
     width: 300px;
 }
+.About-Us-Container{
+    background: (120deg, rgba(255,209,48,0.3) 0%, rgba(179,227,231,0.3) 52%, rgba(124,206,193,0.3) 100%);
+
+
+}
+
+
+.button-contact{
+    background: #6feb63;
+
+    border: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+.button-contact:hover{
+    cursor: pointer;
+    background: rgb(27, 27, 27);
+    color: white;
+    padding: 10px 35px;
+}
