@@ -1,26 +1,26 @@
 import "./AboutUs.css";
-import photo from "./dad.jpg";
+import photo from "./james.png";
 import { useNavigate } from "react-router";
 
-
 const AboutUs = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="About-Us-Container">
-      <div className="image-container">
-        <p>Hello there! My name is James</p>
-        <img className="selfie" src={photo} />
+      <div className="circular--portrait">
+        <img className="selfie" src={photo} alt='owner' />
+      </div>
+      <div className="Information-aboutUs-Container">
         <div>
-          <p className="AboutUs-p-tag">
-            Hello, my name is James and I have experience in a multitude of
-            services when it comes to landscaping. I have designed frontyards,
-            backyards, patios, and collaborated in creating a swimming pool.
-            Please feel free to contact me anytime for an estimate on your
-            frontyard, backyard, and any other landscaping feature you'd like.
-            Contact me @ jamesSoonHong@gmail.com. Feel free to look through my
-            work via instagram.
-          </p>
-          <button className="button-contact" onClick={()=>{navigate('/contact')}}>Contact Me</button>
+          <h1 className="intro">Owner & Designer</h1>
+          <p className="AboutUs-p-tag">James</p>
+          <button
+            className="button-contact"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>

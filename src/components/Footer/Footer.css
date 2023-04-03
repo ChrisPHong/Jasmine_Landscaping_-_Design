@@ -1,62 +1,101 @@
-.contactLogo{
- width: 20px;
-
+.contactLogo {
+  width: 20px;
 }
 
-
-.Logo-Container{
-    display: flex;
-    flex-direction: column;
-    width: 20px;
-
-
+.Logo-Container {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
 }
 
-
-.contact-Container{
-display: flex;
-flex-direction: row;
-
+.contact-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.email-logo{
-    display: flex;
-    align-items: center;
+.email-logo {
+  display: flex;
+  align-items: center;
 }
 
-.instagram-logo{
-    display: flex;
-    align-items: center;
+.instagram-logo {
+  display: flex;
+  align-items: center;
 }
 
-.email-ptag{
-    font-size: 10px;
-    margin-left: 8px;
-    text-decoration: none;
-
+.email-ptag {
+  font-size: 10px;
+  margin-left: 8px;
+  text-decoration: none;
 }
 
-
-.link-p{
-text-decoration: none;
-
+.link-p {
+  text-decoration: none;
+}
+.JLD-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.Contact-Us-Container{
-
-    padding-left: 10px;
-    max-width: fit-content;
+.Contact-Us-Container {
+  padding-left: 10px;
+  max-width: fit-content;
 }
 
-.Footer-Container{
+.Footer-Container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(170, 170, 170);
+  padding-bottom: 80px;
+}
+
+.footer-links {
+    padding-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+
+.left-container {
     display: flex;
     flex-direction: row;
-    margin: 20px;
     justify-content: space-between;
-    align-items:flex-start;
-    border-top: 2px solid black;
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+*/
+}
+
+.Support-Container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.font-link {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.Jasmine-Landscaping-Container{
+    display: flex;
+    flex-direction: column;
 }
 
 .Social-Container{
-margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-container{
+    margin-left: 40px;
 }
