@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div className="About-Us-Container">
       <div className="circular--portrait">
-        <img className="selfie" src={photo} />
+        <img className="selfie" src={photo} alt='owner' />
       </div>
       <div className="Information-aboutUs-Container">
         <div>
