@@ -23,9 +23,9 @@ const Contact = () => {
 
             // emailjs.sendForm('service_qo7ioim', 'template_ybhyw45', e.target, 'bVwjn2fVYUy3phcPs')
             // .then((result) => {
-            //     console.log(result.text);
+                //     console.log(result.text);
             // }, (error) => {
-            //     console.log(error.text);
+                //     console.log(error.text);
             // });
 
             // e.target.reset();
@@ -47,6 +47,7 @@ const Contact = () => {
         setErrors(error)
     }, [firstName, lastName, email, phoneNumber, message])
     return (
+            <>
         <div className='Contact-Container'>
             {/* <div className='instagram-Container'>
                 <p>storage</p>
@@ -112,6 +113,9 @@ const Contact = () => {
             </div>
 
         </div>
+
+        
+        </>
     )
 };
 

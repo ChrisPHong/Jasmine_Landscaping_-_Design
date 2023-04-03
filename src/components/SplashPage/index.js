@@ -8,7 +8,7 @@ const SplashPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="full-container">
+      <div className="Splash-full-container">
         <div className="image-Container">
           {/* <img className="splashPhoto" src={splashPhoto} alt="splashPhoto" /> */}
           <img className="splashPhoto" src={landscapePic} alt="splashPhoto" />
