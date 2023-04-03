@@ -1,4 +1,5 @@
-import emailLogo from "./email.jpg";
+// import emailLogo from "./email.jpg";
+import emailLogo from "./whiteEmail.png";
 import instaLogo from "./instagram_logo.png";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
@@ -36,14 +37,15 @@ const Footer = () => {
             <div className="contact-Container">
               <div className="email-logo">
                 <a className="link-p" href="mailto:JamesSoonHong@gmail.com">
-                  <img className="contactLogo" src={emailLogo} />
+                  {/* <img className="contactLogo" src={emailLogo} /> */}
+                  <p className="email-ptag">Email</p>
                 </a>
               </div>
-              <p className="email-ptag">
+              {/* <p className="email-ptag">
                 <a className="link-p" href="mailto:JamesSoonHong@gmail.com">
-                  JamesSoonHong@gmail.com
+                 Email
                 </a>
-              </p>
+              </p> */}
             </div>
 
             <div className="contact-Container">
@@ -52,8 +54,8 @@ const Footer = () => {
                 href={`https://www.instagram.com/jasminelandscapedesign/?hl=en`}
               >
                 <div className="instagram-logo">
-                  <img className="contactLogo" src={instaLogo} />
-                  <p className="email-ptag">instagram</p>
+                  {/* <img className="contactLogo" src={instaLogo} /> */}
+                  <p className="email-ptag">Instagram</p>
                 </div>
               </a>
             </div>
@@ -70,7 +72,6 @@ const Footer = () => {
               >
                 Contact
               </NavLink>
-
             </div>
           </div>
         </div>

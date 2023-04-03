@@ -63,3 +63,25 @@
   padding: 20px 60px;
 }
 
+
+.contact-picture-container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.landscapePicture-div{
+  /* width: 100px; */
+}
+
+.landscapePicture{
+  width: 100vw;
+  height: auto;
+  max-width: 800px;
+}
+
+.splash-contact-container{
+
+}

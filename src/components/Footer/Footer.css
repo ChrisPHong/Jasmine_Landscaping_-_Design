@@ -1,5 +1,6 @@
 .contactLogo {
   width: 20px;
+  padding-top: 1;
 }
 
 .Logo-Container {
@@ -25,9 +26,8 @@
 }
 
 .email-ptag {
-  font-size: 10px;
-  margin-left: 8px;
-  text-decoration: none;
+  font-size: 13px;
+  /* text-decoration: none; */
 }
 
 .link-p {
@@ -52,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(170, 170, 170);
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .footer-links {
