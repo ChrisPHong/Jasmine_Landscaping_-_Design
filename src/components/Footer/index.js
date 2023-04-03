@@ -22,11 +22,11 @@ const Footer = () => {
                                 About Us
                             </p>
                         </NavLink>
-                        <NavLink to='/Services' exact={true} activeClassName='active'>
+                        {/* <NavLink to='/Services' exact={true} activeClassName='active'>
                             <p>
                                 Services
                             </p>
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink to='/' exact={true} activeClassName='active'>
                             <p>
                                 Home

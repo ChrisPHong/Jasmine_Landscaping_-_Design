@@ -1,30 +1,29 @@
 import { useNavigate } from "react-router-dom";
 import "./SplashPage.css";
 import splashPhoto from "./splashpage.jpg";
+import Contact from "../Contact";
 
 const SplashPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div
-        className="full-container"
-        style={{ backgroundImage: `url(${splashPhoto})` }}
-      >
-        <div>
-          {/* <img className="SplashPhoto" src={splashPhoto} /> */}
+      <div className="full-container">
+        <div className="image-Container">
+          <img className="splashPhoto" src={splashPhoto} alt="splashPhoto" />
+        </div>
+        <div className="Information-Container">
           <h1 className="company-name">Jasmine Landscaping & Design</h1>
-
           <button
-            className="button-contact"
+            className="contact-splash"
             onClick={() => {
               navigate("/Contact");
             }}
           >
             Contact Us
           </button>
-          {/* <p className='company-name'>Jasmine Landscaping & Design</p> */}
         </div>
       </div>
+          <Contact />
     </>
   );
 };

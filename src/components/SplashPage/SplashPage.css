@@ -1,41 +1,64 @@
-/* .SplashPhoto {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-} */
-
 .full-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  margin-top: "50px";
-  width: "100%";
-  overflow: "hidden";
-  background-size: "cover";
-  background-repeat: "no-repeat";
-  background-position: "center center";
+  border-radius: 5px;
+  margin-top: 50px;
 }
 
-/* .company-name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    font-weight: bolder;
-    text-shadow:1px 1px 1px black;
-    color: rgb(255, 255, 255);
+.Information-Container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgreen;
 
+}
 
-} */
 .company-name {
   font-size: 60px;
   font-weight: bolder;
   color: rgb(255, 255, 255);
+}
+
+
+.splashPhoto{
+  width: 100vw;
+  height: auto;
+  max-width: 800px;
+
+}
+
+.image-Container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgreen;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.contact-splash{
+  background: #6feb63;
+
+  border: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px 50px;
+  border-radius: 5px;
+  transition-duration: .5s;
+}
+
+.contact-splash:hover{
+  cursor: pointer;
+  background: rgb(27, 27, 27);
+  color: white;
+  padding: 20px 60px;
 }
