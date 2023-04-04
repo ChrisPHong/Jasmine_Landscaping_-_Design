@@ -16,7 +16,9 @@ justify-content: center;
 align-items: center;
 padding-top: 100px;
 background-color: rgb(1, 136, 95);
+padding-bottom: 20px;
 }
+
 
 .AboutUs-p-tag{
   font-size: 20px;
@@ -58,8 +60,45 @@ background-color: rgb(1, 136, 95);
 
 .Below-AboutUs-Container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+  background-color: rgb(1, 136, 95);
+
+}
+
+.company-description{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.aboutusPicture{
+max-width: 500px;
+border-radius: 5px;
+
+}
+
+.picture-p-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px 10px;
+}
+
+.p-description{
+  max-width: 500px;
+  margin: 10px 10px;
+}
+
+.Description-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+
 }

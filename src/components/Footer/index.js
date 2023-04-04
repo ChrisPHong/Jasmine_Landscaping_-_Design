@@ -1,10 +1,11 @@
 // import emailLogo from "./email.jpg";
-import emailLogo from "./whiteEmail.png";
-import instaLogo from "./instagram_logo.png";
+// import emailLogo from "./whiteEmail.png";
+// import instaLogo from "./instagram_logo.png";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const date = new Date().getFullYear()
   return (
     <>
       <div className="Footer-Container">
@@ -46,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div className="Social-Container foot-container">
-            <h3 className="font-link">Socials</h3>
+            <h3 className="font-link">Email & Social</h3>
 
             <div className="contact-Container">
               <div className="email-logo">
@@ -57,7 +58,7 @@ const Footer = () => {
               </div>
               {/* <p className="email-ptag">
                 <a className="link-p" href="mailto:JamesSoonHong@gmail.com">
-                 Email
+                Email
                 </a>
               </p> */}
             </div>
@@ -69,11 +70,15 @@ const Footer = () => {
               >
                 <div className="instagram-logo">
                   {/* <img className="contactLogo" src={instaLogo} /> */}
-                  <p className="email-ptag">Instagram</p>
+                  <p className="instagram-ptag">Instagram</p>
                 </div>
               </a>
             </div>
           </div>
+        </div>
+        <div className="copyright-Container">
+              <h3 className="copyright"> © COPYRIGHT {new Date().getFullYear()} Jasmine Landscaping & Design - ALL RIGHTS RESERVED</h3>
+
         </div>
       </div>
     </>
