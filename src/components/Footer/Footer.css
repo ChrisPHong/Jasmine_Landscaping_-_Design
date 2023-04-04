@@ -27,7 +27,15 @@
 
 .email-ptag {
   font-size: 13px;
-  /* text-decoration: none; */
+  text-decoration: none;
+  color:rgb(112, 112, 112);
+  transition-duration: .3s;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.email-ptag:hover {
+  padding-left: 10px;
+  color: rgb(212, 212, 212);
 }
 
 .link-p {
@@ -51,15 +59,23 @@
   padding-top: 20px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(27, 27, 27);
   padding-bottom: 30px;
 }
 
 .footer-links {
+  text-decoration: none;
     padding-top: 10px;
   font-size: 13px;
   font-weight: bold;
-  color: black;
+  transition-duration: .3s;
+  color: rgb(112, 112, 112);
+}
+
+.footer-links:hover {
+  color: rgb(212, 212, 212);
+  padding-left: 10px;
+
 }
 
 .left-container {
@@ -84,6 +100,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  color: rgb(212, 212, 212)
 }
 
 .Jasmine-Landscaping-Container{

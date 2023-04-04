@@ -31,8 +31,22 @@ const Footer = () => {
             </div>
           </div>
 
+          <div className="foot-container">
+            <h3 className="font-link">Support</h3>
+            <div className="Support-Container">
+              <NavLink
+                to="/Contact"
+                exact={true}
+                className={"footer-links"}
+                activeClassName="active"
+              >
+                Contact
+              </NavLink>
+            </div>
+          </div>
+
           <div className="Social-Container foot-container">
-            <h3 className="font-link">Social</h3>
+            <h3 className="font-link">Socials</h3>
 
             <div className="contact-Container">
               <div className="email-logo">
@@ -58,20 +72,6 @@ const Footer = () => {
                   <p className="email-ptag">Instagram</p>
                 </div>
               </a>
-            </div>
-          </div>
-
-          <div className="foot-container">
-            <h3 className="font-link">Support</h3>
-            <div className="Support-Container">
-              <NavLink
-                to="/Contact"
-                exact={true}
-                className={"footer-links"}
-                activeClassName="active"
-              >
-                Contact
-              </NavLink>
             </div>
           </div>
         </div>
