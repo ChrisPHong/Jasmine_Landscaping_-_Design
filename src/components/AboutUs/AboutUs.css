@@ -4,6 +4,9 @@
 }
 .intro {
   font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .About-Us-Container {
@@ -11,9 +14,25 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-margin-top: 100px;
+padding-top: 100px;
+background-color: rgb(1, 136, 95);
+padding-bottom: 20px;
 }
 
+
+.AboutUs-p-tag{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+.Name-button-div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
 .button-contact {
   background: #6feb63;
@@ -34,12 +53,52 @@ margin-top: 100px;
   padding: 10px 35px;
 }
 
-
-.Information-aboutUs-Container{
-
-}
-
 .selfie{
     border-radius: 50%;
     width:300px
+}
+
+.Below-AboutUs-Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(1, 136, 95);
+
+}
+
+.company-description{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.aboutusPicture{
+max-width: 500px;
+border-radius: 5px;
+
+}
+
+.picture-p-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px 10px;
+}
+
+.p-description{
+  max-width: 500px;
+  margin: 10px 10px;
+}
+
+.Description-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+
 }

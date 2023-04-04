@@ -17,6 +17,16 @@ const NavBar = () => {
           <div className="right-container">
             <div className="AboutUs-Container">
               <NavLink
+                to="/"
+                exact={true}
+                style={{ textDecoration: "none" }}
+                activeClassName="active"
+              >
+                <p className="nav-tag">Home</p>
+              </NavLink>
+            </div>
+            <div className="AboutUs-Container">
+              <NavLink
                 to="/AboutUs"
                 exact={true}
                 style={{ textDecoration: "none" }}
