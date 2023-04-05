@@ -68,7 +68,7 @@ const NavBar = () => {
                 style={{ textDecoration: "none" }}
                 activeClassName="active"
               >
-                <p className="nav-tag">Photos</p>
+                <p className="nav-tag">Gallery</p>
               </NavLink>
             </div>
             <div className="AboutUs-Container InstagramContainer">
