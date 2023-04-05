@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import JLDLogo from "./JLD_Logo_Color.png";
+import instaLogo from "./instagramLogo.png";
 import "./Navbar.css";
 
 const NavBar = () => {
@@ -66,6 +67,16 @@ const NavBar = () => {
               >
                 <p className="nav-tag">Photos</p>
               </NavLink>
+            </div>
+            <div className="AboutUs-Container InstagramContainer">
+              <a
+                href="https://www.instagram.com/jasminelandscapedesign/?hl=en"
+                exact={true}
+                style={{ textDecoration: "none" }}
+                activeClassName="active"
+              >
+                <img src={instaLogo} className="nav-tag instaLogo"/>
+              </a>
             </div>
           </div>
         </div>
