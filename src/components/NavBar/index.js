@@ -8,12 +8,15 @@ const NavBar = () => {
   return (
     <nav>
       <div className="navbar-container">
-        <div>
+        <div className="left-container">
           <NavLink to="/" exact={true} activeClassName="active">
             <img className="JLDLogo" src={JLDLogo} />
           </NavLink>
+          <div className="jasmineLandscapingDesign">
+          Jasmine Landscaping & Design
+          </div>
         </div>
-
+    <div></div>
         <div>
           <div className="right-container">
             <div className="AboutUs-Container">
