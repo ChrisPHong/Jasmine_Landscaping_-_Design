@@ -8,7 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 import Contact from './components/Contact';
 import Photos from './components/Photos';
-
+import AboutSplash from './components/SplashAbout'
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 
         <Route path='/' element={<SplashPage />} />
         <Route path='/aboutus' element={<AboutUs />} />
+        {/* <Route path='/aboutus' element={<AboutSplash />} /> */}
         <Route path='/contact' element={<Contact/>} />
         <Route path='/photos' element={<Photos/>} />
         {/* <Route path='/photos/:id' element={} /> */}

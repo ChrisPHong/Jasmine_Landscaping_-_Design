@@ -105,16 +105,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
+  margin: 0 100px;
 }
 
 
-.contact-p-tag{
+.contact-p-tag-container{
   max-width: 600px;
   font-size: 20px;
   font-family: sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 500px
 }
 
 .contactUs-h3{
