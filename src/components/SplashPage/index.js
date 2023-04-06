@@ -1,41 +1,65 @@
 import { useNavigate } from "react-router-dom";
 import "./SplashPage.css";
-import splashPhoto from "./splashpage.jpg";
-import Contact from '../ContactSplash'
-import landscapePic from './pic51.jpg'
+import splashPhoto from "./splashPagePhoto.png";
+import Contact from "../ContactSplash";
+import landscapePic from "./pic51.jpg";
+import homePicture from "./homePicture.jpg";
 
 const SplashPage = () => {
   const navigate = useNavigate();
   return (
     <>
       <div className="Splash-full-container">
-        <div className="image-Container">
-          {/* <img className="splashPhoto" src={splashPhoto} alt="splashPhoto" /> */}
-          <img className="splashPhoto" src={landscapePic} alt="splashPhoto" />
-        </div>
-        <div className="Information-Container">
-          <h1 className="company-name">Jasmine Landscaping & Design</h1>
-          <button
-            className="contact-splash"
-            onClick={() => {
-              navigate("/Contact");
-            }}
+        <div className="splashImage-container">
+          <div className="welcomeDiv">
+            <h3 className="welcomeh3">
+              Welcome to Jasmine
+            </h3>
+            <h3 className="welcomeh3 secondh3">
+              Landscaping & Design
+            </h3>
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+              className="quote-button"
             >
-            Contact Us
-          </button>
+              Get a FREE Quote
+            </button>
+            <p className="phoneNumberSplash">1 (949) 412-3153</p>
+          </div>
         </div>
       </div>
       <div className="contact-picture-container">
-            <div></div>
-        <div className="landscapePicture-div">
-
-          <img className="landscapePicture" src={splashPhoto} />
-        </div>
         <div className="splash-contact-container">
-
+          <div className="contact-descrip">
+            <h3 className="contactUs-h3">Contact Us</h3>
+            <p className="contact-p-tag">
+              Thank you for showing interest in our company. If you would like
+              to contact us for any reason, please fill out the form to your
+              right to get started on your <p className="free">free</p>{" "}
+              estimate!
+            </p>
+            <p className="phoneNumber-descrip">Or Call: 1(949) 412-3153</p>
+          </div>
           <Contact />
         </div>
-        <div></div>
+      </div>
+      <div className="aboutJLD-image-container">
+        <div className="aboutJLD-div">
+          <h3 className="aboutJLD-h3">About JLD</h3>
+          <p>
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum{" "}
+          </p>
+        </div>
+        <img className="splashPhoto" src={splashPhoto} />
       </div>
     </>
   );
