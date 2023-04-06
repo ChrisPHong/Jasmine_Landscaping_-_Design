@@ -49,9 +49,7 @@ const Contact = () => {
     return (
             <>
         <div className='Contact-Container'>
-            {/* <div className='instagram-Container'>
-                <p>storage</p>
-            </div> */}
+
             <div className="form-container">
                 <div className='h1-container'>
 
@@ -94,16 +92,15 @@ const Contact = () => {
                             <span class="placeholder">Phone Number</span>
                         </label>
 
-                        <label className='text-field one textarea'>
+
 
                             <textarea onChange={(e)=>{
                                 setMessage(e.target.value)
                             }}
                             className='textarea-input' placeholder="Leave a Message..." type="text" name="message" required />
-                            {/* <span class="placeholder">Message</span> */}
 
                             <span class="placeholder"></span>
-                        </label>
+
                         <input className='submit-button' type="submit" value="Send Message"></input>
 
                     </div>
@@ -114,7 +111,7 @@ const Contact = () => {
 
         </div>
 
-        
+
         </>
     )
 };

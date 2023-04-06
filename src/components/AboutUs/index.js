@@ -33,7 +33,7 @@ const AboutUs = () => {
           <h3>Jasmine Landscaping & Design</h3>
           <div className="company-Description">
             <div className="picture-p-container">
-              <img className="aboutusPicture" src={landPhoto}></img>
+              <img className="aboutusPicture" alt='landscape_Picture' src={landPhoto}></img>
               <p className="p-description">
                 Established in 1993. Lorem ipsumLorem ipsumLorem ipsumLorem
                 ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
@@ -52,10 +52,14 @@ const AboutUs = () => {
                 ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
                 ipsumLorem ipsumLorem ipsumLorem
               </p>
-              <img className="aboutusPicture" src={barbPhoto}></img>
+              <img className="aboutusPicture" alt='landscape_Picture' src={barbPhoto}></img>
             </div>
           </div>
         </div>
+        <button className="Estimate-Button"
+        onClick={()=> {
+          navigate('/Contact')
+        }}>Get an Estimate</button>
       </div>
     </>
   );

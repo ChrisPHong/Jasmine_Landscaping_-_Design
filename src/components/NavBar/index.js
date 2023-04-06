@@ -36,7 +36,7 @@ const NavBar = () => {
                 style={{ textDecoration: "none" }}
                 activeClassName="active"
               >
-                <p className="nav-tag">About Us</p>
+                <p className="nav-tag">About</p>
               </NavLink>
             </div>
 

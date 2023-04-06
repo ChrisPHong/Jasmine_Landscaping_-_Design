@@ -1,12 +1,16 @@
 .Splash-full-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 5px;
-  /* margin-top: 50px; */
-  background-color:#173c34;
+  margin-top: 100px;
+  background-color:#006837;
   isolation: isolate;
+  background-image: url('./homePicture.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-bottom: solid 9px #006837;
 }
 
 .Information-Container{
@@ -16,19 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(173, 84, 0); */
-  /* position: relative; */
 }
-
-/* .Information-Container::after{
-  content: '';
-  position:absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgb(1, 49, 5);
-  opacity: .5;
-
-} */
 
 .company-name {
   font-size: 60px;
@@ -40,7 +32,7 @@
 .splashPhoto{
   width: 100vw;
   height: auto;
-  max-width: 800px;
+  max-width: 900px;
 
 }
 
@@ -78,16 +70,13 @@
 
 
 .contact-picture-container{
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
-.landscapePicture-div{
-  /* width: 100px; */
-}
 
 .landscapePicture{
   width: 100vw;
@@ -95,6 +84,123 @@
   max-width: 800px;
 }
 
-.splash-contact-container{
 
+.free{
+  margin: 0;
+  font-weight: bold;
+  display: inline;
+}
+
+
+.splash-contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.contact-descrip{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+
+.contact-p-tag{
+  max-width: 600px;
+  font-size: 20px;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs-h3{
+  font-size: 40px;
+  color: #006837;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.phoneNumber-descrip{
+color: #006837;
+font-weight: bold;
+font-size: 30px;
+width: 400px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.splashImage-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.aboutJLD-h3{
+  color: white;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.aboutJLD-div{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcomeDiv{
+  /* background-color: rgb(0, 104, 55, .7); */
+  background-color: rgba(4, 48, 28, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 70px;
+  width: 100%;
+}
+
+.quote-button{
+  color: white;
+  padding: 20px 40px;
+  border-radius: 50px 50px;
+  background-color: #006837;
+  border: 2px solid #006837;
+  transition-duration: .3s;
+  font-weight: bold;
+  font-size: 20px;
+}
+.quote-button:hover{
+  cursor: pointer;
+  border: 2px solid #258e46;
+  background-color: #258e46;
+}
+
+
+.phoneNumberSplash{
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+
+}
+
+
+.welcomeh3{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+.secondh3{
+  margin: 0px;
+  margin-bottom: 40px;
 }
