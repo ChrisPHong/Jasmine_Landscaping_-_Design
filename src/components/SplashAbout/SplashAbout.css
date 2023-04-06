@@ -1,0 +1,55 @@
+.Hero-Splash-Div{
+
+    border-bottom: solid 9px #006837;
+    border-top: solid 9px #006837;
+    background-color: #258e46;
+}
+
+.AboutJLD-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPageImage{
+    max-width: 1100px;
+    min-width: 500px
+}
+
+.AboutJLD-Info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    min-width: 400px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+
+.AboutJLDh3{
+    color: white;
+    font-size: 50px;
+    font-family: didot;
+    /* margin-bottom: 20px; */
+}
+
+.learnMoreButton{
+    font-weight: bold;
+    background-color: white;
+    border-radius: 50px 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #173c34;
+    border: none;
+    transition-duration: .3s;
+}
+
+.learnMoreButton:hover{
+    cursor: pointer;
+    background-color:#173c34;
+    color: white;
+}

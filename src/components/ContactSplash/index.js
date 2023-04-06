@@ -105,7 +105,7 @@ const Contact = () => {
           />
 
           <input
-            className="submit-button"
+            className="submit-button curvedButton"
             type="submit"
             value="Send Message"
           ></input>
