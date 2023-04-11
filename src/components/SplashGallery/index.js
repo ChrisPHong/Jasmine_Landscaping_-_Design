@@ -25,11 +25,11 @@ const SplashGallery = () => {
             <img className="galleryPicture" alt="picture4" src={photo4} />
           </div>
           <div className="picture-container">
-            <img className="galleryPicture" alt="picture5" src={photo5} />
             <img className="galleryPicture" alt="picture6" src={photo6} />
+            <img className="galleryPicture" alt="picture5" src={photo5} />
             <img className="galleryPicture" alt="picture7" src={photo7} />
             <img className="galleryPicture" alt="picture8" src={photo8} />
-            <img className="galleryPicture" alt="picture9" src={photo9} />
+            {/* <img className="galleryPicture" alt="picture9" src={photo9} /> */}
           </div>
         </div>
         <button className="galleryButton" onClick={()=>{

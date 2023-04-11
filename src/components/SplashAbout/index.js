@@ -8,7 +8,7 @@ const SplashAbout = () => {
       <div className="AboutJLD-Container">
         <div className="AboutJLD-Info">
           <h3 className="AboutJLDh3">About JLD</h3>
-          <p>
+          <p className="about-p-tag">
             Lorem Ipsum hello, this is a test Lorem Ipsum hello, this is a test
             Lorem Ipsum hello, this is a test Lorem Ipsum hello, this is a test
             Lorem Ipsum hello, this is a test Lorem Ipsum hello, this is a test
