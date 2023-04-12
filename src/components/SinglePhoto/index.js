@@ -19,7 +19,11 @@ const SinglePhoto = (props) => {
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
             <div className="modal-content">
-              <img className="modal-picture" src={props.photo} />
+              <img
+                className="modal-picture"
+                src={props.photo}
+                alt="LandScapeimage"
+              />
               <button
                 className="close-modal"
                 onClick={() => {
@@ -33,6 +37,7 @@ const SinglePhoto = (props) => {
         ): null)}
       <div className="singlePhoto-div">
         <img
+          alt="LandScapingPicture"
           className="photo"
           src={props.photo}
           onClick={() => {
