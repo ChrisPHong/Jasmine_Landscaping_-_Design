@@ -1,4 +1,31 @@
-.AboutUs-p-tag {
+
+
+
+.Full-About-Container{
+  margin-top: 100px;
+  /* background-color: #006837; */
+  /* background-color: #173c34; */
+   /* background-color: #258e46; */
+
+  }
+
+
+
+
+
+
+
+  .AboutJLD-Container{
+    border-bottom: #006837 solid 10px;
+    background-color: #258e46;
+}
+
+
+.state_container{
+  background-color: white;
+}
+
+/* .AboutUs-p-tag {
   text-decoration: none;
   color: black;
 }
@@ -118,4 +145,4 @@
   background: rgb(27, 27, 27);
   color: white;
   padding: 20px 60px;
-}
+} */
