@@ -49,85 +49,81 @@ const NavBar = () => {
             </div>
           </div>
 
-          <div>
-            <div className="right-container">
-              {!mobile && (
-                <>
-                  <div className="AboutUs-Container">
-                    <NavLink
-                      to="/"
-                      exact={true}
-                      style={{ textDecoration: "none" }}
-                      activeClassName="active"
-                    >
-                      <p className="nav-tag">Home</p>
-                    </NavLink>
-                  </div>
-                  <div className="AboutUs-Container">
-                    <NavLink
-                      to="/AboutUs"
-                      exact={true}
-                      style={{ textDecoration: "none" }}
-                      activeClassName="active"
-                    >
-                      <p className="nav-tag">About</p>
-                    </NavLink>
-                  </div>
+          <div className="right-container">
+            {!mobile && (
+              <>
+                <div className="AboutUs-Container">
+                  <NavLink
+                    to="/"
+                    exact={true}
+                    style={{ textDecoration: "none" }}
+                    activeClassName="active"
+                  >
+                    <p className="nav-tag">Home</p>
+                  </NavLink>
+                </div>
+                <div className="AboutUs-Container">
+                  <NavLink
+                    to="/AboutUs"
+                    exact={true}
+                    style={{ textDecoration: "none" }}
+                    activeClassName="active"
+                  >
+                    <p className="nav-tag">About</p>
+                  </NavLink>
+                </div>
 
-                  <div className="AboutUs-Container">
-                    <NavLink
-                      to="/Contact"
-                      exact={true}
-                      style={{ textDecoration: "none" }}
-                      activeClassName="active"
-                    >
-                      <p className="nav-tag">Contact</p>
-                    </NavLink>
-                  </div>
-                  <div className="AboutUs-Container">
-                    <NavLink
-                      to="/photos"
-                      exact={true}
-                      style={{ textDecoration: "none" }}
-                      activeClassName="active"
-                    >
-                      <p className="nav-tag">Gallery</p>
-                    </NavLink>
-                  </div>
-                  <div className="AboutUs-Container InstagramContainer">
-                    <a
-                      href="https://www.instagram.com/jasminelandscapedesign/?hl=en"
-                      exact={true}
-                      style={{ textDecoration: "none" }}
-                      activeClassName="active"
-                    >
-                      <img src={instaLogo} className="nav-tag instaLogo" />
-                    </a>
-                  </div>
-                </>
-              )}
-              <div className="toggle-sidebar-container">
-                {mobile && (
-                  <div className="sidebar-toggle">
-                    {sidebar ? (
-                      <button
-                        className="sidebar-toggle-logo"
-                        onClick={() => setSidebar(!sidebar)}
-                      >
-                        =
-                      </button>
-                    ) : (
-                      <button
-                        className="sidebar-toggle-logo"
-                        onClick={() => setSidebar(!sidebar)}
-                      >
-                        x
-                      </button>
-                    )}
-                  </div>
+                <div className="AboutUs-Container">
+                  <NavLink
+                    to="/Contact"
+                    exact={true}
+                    style={{ textDecoration: "none" }}
+                    activeClassName="active"
+                  >
+                    <p className="nav-tag">Contact</p>
+                  </NavLink>
+                </div>
+                <div className="AboutUs-Container">
+                  <NavLink
+                    to="/photos"
+                    exact={true}
+                    style={{ textDecoration: "none" }}
+                    activeClassName="active"
+                  >
+                    <p className="nav-tag">Gallery</p>
+                  </NavLink>
+                </div>
+                <div className="AboutUs-Container InstagramContainer">
+                  <a
+                    href="https://www.instagram.com/jasminelandscapedesign/?hl=en"
+                    exact={true}
+                    style={{ textDecoration: "none" }}
+                    activeClassName="active"
+                  >
+                    <img src={instaLogo} className="nav-tag instaLogo" />
+                  </a>
+                </div>
+              </>
+            )}
+            {mobile && (
+              <div className="sidebar-toggle">
+                {sidebar ? (
+                  <button
+                    className="sidebar-toggle-logo"
+                    onClick={() => setSidebar(!sidebar)}
+                  >
+                    X
+                  </button>
+                ) : (
+                  <button
+                    className="sidebar-toggle-logo"
+                    onClick={() => setSidebar(!sidebar)}
+                  >
+                    =
+                  </button>
                 )}
               </div>
-            </div>
+            )}
           </div>
         </div>
       </nav>
