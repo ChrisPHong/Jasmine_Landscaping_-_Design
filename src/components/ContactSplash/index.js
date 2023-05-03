@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "./ContactSplash.css";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 
@@ -47,70 +47,81 @@ const Contact = () => {
   }, [firstName, email, phoneNumber, message]);
   return (
     <div className="SplashContact-Container">
-      {/* <div className="form-container"> */}
-        <div>
-          {show
-            ? errors.map((error) => {
-                return (
-                  <>
-                    <li style={{ color: "red" }}>{error}</li>
-                  </>
-                );
-              })
-            : null}
+      <div className="a-div">
+        <h3 className="Contact-h3">Contact Us</h3>
+        <div className="center-description">
+          <div className="description-p-tag">
+            Thank you for showing interest in our company. If you would like to
+            contact us for any reason, please fill out the form to your right to
+            get started on your free estimate!
+          </div>
         </div>
-        <form onSubmit={sendEmail} className="form-container">
-          <input
-            className="contact-input"
-            onChange={(e) => {
-              setFirstName(e.target.value);
-            }}
-            type="text"
-            name="first_name"
-            placeholder="Name"
-            required
-          />
 
-          <input
-            className="contact-input"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-            type="text"
-            name="email"
-            required
-            placeholder="Email"
-          />
+        <span className="callNumber-tag">Or Call: 1(949) 412-3153</span>
+      </div>
+      {/* <div className="form-container"> */}
+      <div>
+        {show
+          ? errors.map((error) => {
+              return (
+                <>
+                  <li style={{ color: "red" }}>{error}</li>
+                </>
+              );
+            })
+          : null}
+      </div>
+      <form onSubmit={sendEmail} className="form-container">
+        <input
+          className="contact-input"
+          onChange={(e) => {
+            setFirstName(e.target.value);
+          }}
+          type="text"
+          name="first_name"
+          placeholder="Name"
+          required
+        />
 
-          <input
-            className="contact-input"
-            onChange={(e) => {
-              setphoneNumber(e.target.value);
-            }}
-            type="numbers"
-            name="phone"
-            required
-            placeholder="Phone Number"
-          />
+        <input
+          className="contact-input"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          type="text"
+          name="email"
+          required
+          placeholder="Email"
+        />
 
-          <textarea
-            className="contact-input textarea-input"
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-            placeholder="Brief description of project..."
-            type="text"
-            name="message"
-            required
-          />
+        <input
+          className="contact-input"
+          onChange={(e) => {
+            setphoneNumber(e.target.value);
+          }}
+          type="numbers"
+          name="phone"
+          required
+          placeholder="Phone Number"
+        />
 
-          <input
-            className="submit-button curvedButton"
-            type="submit"
-            value="Send Message"
-          ></input>
-        </form>
-      {/* </div> */}
+        <textarea
+          className="contact-input textarea-input"
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
+          placeholder="Brief description of project..."
+          type="text"
+          name="message"
+          required
+        />
+
+        <input
+          className="submit-button curvedButton"
+          type="submit"
+          value="Send Message"
+        ></input>
+      </form>
     </div>
   );
 };

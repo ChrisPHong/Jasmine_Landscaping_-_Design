@@ -28,8 +28,8 @@ const SplashPage = () => {
           </div>
         </div>
       </div>
-      <div className="contact-picture-container">
-        <div className="splash-contact-container">
+      {/* <div className="contact-picture-container"> */}
+        {/* <div className="splash-contact-container">
           <div className="contact-descrip">
             <h3 className="contactUs-h3">Contact Us</h3>
             <div className="contact-p-tag-container">
@@ -40,12 +40,12 @@ const SplashPage = () => {
               </p>
             </div>
             <p className="phoneNumber-descrip">Or Call: 1(949) 412-3153</p>
-          </div>
+          </div> */}
           <Contact />
-        </div>
-      </div>
-      <SplashAbout />
-      <SplashGallery />
+        {/* </div> */}
+      {/* </div> */}
+      {/* <SplashAbout /> */}
+      {/* <SplashGallery /> */}
     </>
   );
 };

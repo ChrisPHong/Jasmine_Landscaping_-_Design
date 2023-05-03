@@ -20,13 +20,13 @@ function App() {
         <Route path='/' element={<SplashPage />} />
         <Route path='/aboutus' element={<AboutUs />} />
         {/* <Route path='/aboutus' element={<AboutSplash />} /> */}
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/photos' element={<Photos/>} />
+        {/* <Route path='/contact' element={<Contact/>} /> */}
+        {/* <Route path='/photos' element={<Photos/>} /> */}
         {/* <Route path='/photos/:id' element={} /> */}
 
 
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

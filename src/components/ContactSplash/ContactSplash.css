@@ -1,0 +1,144 @@
+p {
+  font-family: sans-serif;
+}
+
+.SplashContact-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+  padding: 20px 50px;
+  width: 100%;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 15px 20px;
+  transition-duration: 0.5s;
+  color: white;
+  border: 1px solid #222;
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: #006837;
+}
+.curvedButton {
+  border-radius: 50px 50px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #258e46;
+}
+
+.textarea-input {
+  resize: none;
+  margin-top: 14px;
+  border-color: #222;
+}
+
+.h1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.contact-input {
+  /* max-width: 300px; */
+  width: 100%;
+  padding: 15px 30px;
+  margin: 10px 0px;
+  border: none;
+  color: rgb(65, 65, 65);
+  font-size: 20px;
+}
+.contact-input::placeholder {
+  color: rgb(65, 65, 65, 0.8);
+  font-size: 20px;
+}
+.contact-input:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  font-family: sans-serif;
+  color: rgb(44, 44, 44);
+}
+.textarea-input {
+  margin: 10px 0px;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  font-family: sans-serif;
+}
+
+.textarea-input:focus {
+  outline: none;
+}
+
+.contact-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.a-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 40px;
+  max-height: 900px;
+}
+
+.Contact-h3 {
+  color: #006837;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0px;
+  padding:0px;
+}
+
+.center-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description-p-tag {
+  margin: 0px;
+  font-family: sans-serif;
+  padding: 0px 20px;
+}
+
+.callNumber-tag {
+  font-weight: bold;
+  font-size: 20px;
+  color: #006837;
+  padding: 20px;
+}
+
+@media screen and (width <= 900px){
+    .SplashContact-Container{
+        flex-direction: column;
+    }
+    .a-div{
+        height: fit-content;
+        width: 100vw;
+        margin: 10px;
+    }
+    .Contact-h3{
+        margin: 10px;
+    }
+}

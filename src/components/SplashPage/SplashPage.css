@@ -117,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 500px
+
 }
 
 .contactUs-h3{
@@ -203,13 +203,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 40px;
 }
 
-/* @media screen and (width <= 900px){
-  .Splash-full-container{
-    justify-content: center;
-    background-size: width;
-    max-width:100px;
-  }
-   .splashImage-container{
-    max-width: 100px;
-  }
-} */
+@media screen and (max-width <= 900px){
+
+ }
