@@ -1,69 +1,121 @@
- .form-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-p{
+
+p {
+  font-family: sans-serif;
+}
+
+.Contact-Container {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  margin-top: 10px;
+  padding: 15px 20px;
+  transition-duration: 0.5s;
+  color: white;
+  border: 1px solid #222;
+  border-radius: 50px 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.Form-Input {
+  padding: 20px 40px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.Form-Input::placeholder {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.Contact-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding: 20px 50px;
+}
+
+.Contact-Full-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  flex-direction: row;
+}
+.contactUs-h3 {
+    color: #006837;
+    font-size: 65px;
+    margin-top: 0px;
+}
+
+.contact-descrip {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.contact-p-tag{
     font-family: sans-serif;
-}
-
-
-.Contact-Container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
-
-
-
-.submit-button{
-    margin-top: 10px;
-    padding: 15px 20px;
-    transition-duration: .5s;
-    color: white;
-    border: 1px solid #222;
-    border-radius: 50px 50px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-.submit-button:hover{
-    cursor: pointer;
-
-}
-
-
-.Form-Input{
-    padding: 20px 40px;
-    border: 2px solid black;
     margin: 10px;
-}
+    padding: 0px 10px;
+    max-width: 400px;
+    line-height: 1.6;
 
-.Form-Input::placeholder{
-    color: black;
-    font-family: sans-serif;
+}
+.phoneNumber-descrip{
     font-weight: bold;
+    font-size: 20px;
+    color: #006837;
+    padding: 20px;
+    margin:0px;
+}
+.contact-p-tag-container{
 
 }
+@media screen and (width <= 900px) {
+    .Contact-Full-div {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .contactUs-h3 {
+        color: #006837;
+        font-size: 65px;
+        margin-bottom: 0px;
+    }
+    .contact-descrip {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
 
-.Contact-Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(228, 228, 228);
-    padding: 20px 50px;
-}
-
-
-.Contact-Full-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    flex-direction: row;
+    .Contact-Container{
+        margin-top: 0px;
+    }
+    .phoneNumber-descrip{
+        margin: 20px;
+    }
+    .contact-p-tag{
+        margin: 20px 5px;
+        margin-top: 30px;
+    }
 }

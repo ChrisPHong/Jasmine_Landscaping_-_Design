@@ -17,15 +17,23 @@ const Contact = () => {
       setShow(true);
       return;
     } else {
+      emailjs
+        .sendForm(
+          "service_qo7ioim",
+          "template_ybhyw45",
+          e.target,
+          "bVwjn2fVYUy3phcPs"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
 
-        emailjs.sendForm('service_qo7ioim', 'template_ybhyw45', e.target, 'bVwjn2fVYUy3phcPs')
-        .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                    console.log(error.text);
-                });
-
-                e.target.reset();
+      e.target.reset();
     }
   };
 
@@ -58,7 +66,6 @@ const Contact = () => {
         <p className="phoneNumber-descrip">Or Call: 1(949) 412-3153</p>
       </div>
       <div className="Contact-Container">
-        {/* <div className="form-container"> */}
         <div>
           {show
             ? errors.map((error) => {
@@ -121,7 +128,6 @@ const Contact = () => {
             value="Send Message"
           ></input>
         </form>
-        {/* </div> */}
       </div>
     </div>
   );
