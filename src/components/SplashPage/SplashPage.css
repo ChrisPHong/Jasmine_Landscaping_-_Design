@@ -5,16 +5,15 @@
   align-items: center;
   border-radius: 5px;
   margin-top: 100px;
-  background-color:#006837;
+  background-color: #006837;
   isolation: isolate;
-  background-image: url('./homePicture.jpg');
+  background-image: url("./homePicture.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   border-bottom: solid 9px #006837;
 }
 
-
-.Information-Container{
+.Information-Container {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -29,15 +28,13 @@
   color: rgb(255, 255, 255);
 }
 
-
-.splashPhoto{
+.splashPhoto {
   width: 100vw;
   height: auto;
   max-width: 900px;
-
 }
 
-.image-Container{
+.image-Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,119 +43,41 @@
   mix-blend-mode: multiply; */
   width: 100vw;
   height: 100vh;
-
 }
 
-.contact-splash{
-  background: #6feb63;
-
-  border: none;
-  color: black;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 20px 50px;
-  border-radius: 5px;
-  transition-duration: .5s;
-}
-
-.contact-splash:hover{
-  cursor: pointer;
-  background: rgb(27, 27, 27);
-  color: white;
-  padding: 20px 60px;
-}
-
-
-.contact-picture-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #f2f2f2;
-}
-
-
-.landscapePicture{
+.landscapePicture {
   width: 100vw;
   height: auto;
   max-width: 800px;
 }
 
-
-.free{
+.free {
   margin: 0;
   font-weight: bold;
   display: inline;
 }
 
-
-.splash-contact-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.contact-descrip{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 100px;
-}
-
-
-.contact-p-tag-container{
-  max-width: 600px;
-  font-size: 20px;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.contactUs-h3{
-  font-size: 40px;
-  color: #006837;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-
-.phoneNumber-descrip{
-color: #006837;
-font-weight: bold;
-font-size: 30px;
-width: 400px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-.splashImage-container{
+.splashImage-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.aboutJLD-h3{
+.aboutJLD-h3 {
   color: white;
   font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-.aboutJLD-div{
+.aboutJLD-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-
-.welcomeDiv{
+.welcomeDiv {
   background-color: rgba(4, 48, 28, 0.7);
   display: flex;
   flex-direction: column;
@@ -168,41 +87,49 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   width: 100%;
 }
 
-.quote-button{
+.quote-button {
   color: white;
   padding: 20px 40px;
   border-radius: 50px 50px;
   background-color: #006837;
   border: 2px solid #006837;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   font-weight: bold;
   font-size: 20px;
 }
-.quote-button:hover{
+.quote-button:hover {
   cursor: pointer;
   border: 2px solid #258e46;
   background-color: #258e46;
 }
 
-.phoneNumberSplash{
+.phoneNumberSplash {
   font-weight: bold;
   color: white;
   font-size: 20px;
-
 }
 
-.welcomeh3{
+.welcomeh3 {
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 50px;
   margin-bottom: 10px;
 }
 
-.secondh3{
+.secondh3 {
   margin: 0px;
   margin-bottom: 40px;
 }
 
-@media screen and (max-width <= 900px){
+@media screen and (width <= 900px) {
+  .Splash-full-container {
+    justify-content: center;
 
- }
+  }
+  .welcomeDiv{
+    /* display: inline; */
+  }
+  .splashImage-container {
+
+  }
+}

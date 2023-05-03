@@ -10,7 +10,7 @@ import SplashGallery from "../SplashGallery";
 const SplashPage = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="page-z">
       <div className="Splash-full-container">
         <div className="splashImage-container">
           <div className="welcomeDiv">
@@ -28,25 +28,10 @@ const SplashPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="contact-picture-container"> */}
-        {/* <div className="splash-contact-container">
-          <div className="contact-descrip">
-            <h3 className="contactUs-h3">Contact Us</h3>
-            <div className="contact-p-tag-container">
-              <p className="contact-p-tag">
-                Thank you for showing interest in our company. If you would like
-                to contact us for any reason, please fill out the form to your
-                right to get started on your free estimate!
-              </p>
-            </div>
-            <p className="phoneNumber-descrip">Or Call: 1(949) 412-3153</p>
-          </div> */}
-          <Contact />
-        {/* </div> */}
-      {/* </div> */}
-      {/* <SplashAbout /> */}
+      <Contact />
+      <SplashAbout />
       {/* <SplashGallery /> */}
-    </>
+    </div>
   );
 };
 

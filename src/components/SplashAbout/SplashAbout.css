@@ -5,7 +5,7 @@
     background-color: #258e46;
 }
 
-.AboutJLD-Container{
+.SplashAboutJLD-Container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,4 +58,19 @@
 
 .about-p-tag{
     margin-left: 80px;
+}
+
+
+@media screen  and (width <= 900px) {
+    .SplashAboutJLD-Container{
+        flex-direction: column;
+        margin: 0px 0px;
+    }
+    .aboutPageImage{
+        max-width: 200px;
+        min-width: 40px;
+    }
+    .learnMoreButton{
+        margin-bottom: 20px;
+    }
 }

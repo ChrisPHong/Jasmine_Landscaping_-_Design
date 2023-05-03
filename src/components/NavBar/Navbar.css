@@ -6,7 +6,7 @@
   border-right: solid 3px #173c34;
 }
 
-.left-container{
+.left-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,7 +14,7 @@
   white-space: nowrap;
 }
 
-.jasmineLandscapingDesign{
+.jasmineLandscapingDesign {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,9 +28,9 @@
 .navbar-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border-bottom: solid 9px #006837;
   position: fixed;
+  justify-content: space-between;
   background-color: white;
   width: 100%;
   top: 0;
@@ -67,14 +67,17 @@ e6e6e6 */
   color: #258e46;
 }
 
-.instaLogo{
+.instaLogo {
   width: 30px;
   margin-top: 10px;
   margin-right: 10px;
 }
 
 .sidebar-toggle {
-
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: center;
 }
 
 .sidebar-toggle-logo {
@@ -96,7 +99,6 @@ e6e6e6 */
 
 .sidebar.active {
   left: 0;
-
 }
 
 .sidebar-items {
@@ -144,14 +146,26 @@ e6e6e6 */
   width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (width <= 900px) {
   .sidebar.active {
     width: 10rem;
-    padding:20px;
+    padding: 20px;
     height: 100vh;
   }
 
   .sidebar-item a span {
     display: none;
+  }
+}
+
+@media screen and (width <= 611px) {
+  .jasmineLandscapingDesign {
+    display: none;
+  }
+}
+
+@media screen and (width <= 414px) {
+  .sidebar-toggle {
+    margin-right: 50px;
   }
 }
