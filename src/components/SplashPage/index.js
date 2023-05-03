@@ -30,7 +30,7 @@ const SplashPage = () => {
       </div>
       <Contact />
       <SplashAbout />
-      {/* <SplashGallery /> */}
+      <SplashGallery />
     </div>
   );
 };
