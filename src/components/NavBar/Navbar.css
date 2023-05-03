@@ -82,8 +82,10 @@ e6e6e6 */
 
 .sidebar-toggle-logo {
   font-size: 2.3rem;
-  color: whitesmoke;
+  color: black;
   cursor: pointer;
+  border:none;
+  background-color: transparent;
 }
 
 .sidebar {
