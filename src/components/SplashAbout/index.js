@@ -1,6 +1,9 @@
 import "./SplashAbout.css";
 import photo from "./splashPagePhoto.png";
 import { useNavigate } from "react-router";
+import pic1 from './pic1.jpg';
+import pic2 from './pic2.jpg';
+
 const SplashAbout = () => {
     const navigate = useNavigate();
   return (
@@ -23,6 +26,10 @@ const SplashAbout = () => {
           }}>Learn More</button>
         </div>
         <img className="aboutPageImage" src={photo} />
+        <div className="twoImageContainer">
+          <img className="pictureAbout" src={pic1}/>
+          <img className="pictureAbout" src={pic2}/>
+        </div>
       </div>
     </div>
   );
