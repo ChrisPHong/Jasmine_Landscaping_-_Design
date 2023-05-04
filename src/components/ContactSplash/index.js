@@ -19,14 +19,14 @@ const Contact = () => {
     } else {
       console.log("sent");
 
-      // emailjs.sendForm('service_qo7ioim', 'template_ybhyw45', e.target, 'bVwjn2fVYUy3phcPs')
-      // .then((result) => {
-      //     console.log(result.text);
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
+      emailjs.sendForm('service_qo7ioim', 'template_ybhyw45', e.target, 'bVwjn2fVYUy3phcPs')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
 
-      // e.target.reset();
+      e.target.reset();
     }
   };
 

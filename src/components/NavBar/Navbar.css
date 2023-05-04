@@ -76,7 +76,6 @@ e6e6e6 */
 .sidebar-toggle {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
   align-items: center;
 }
 
