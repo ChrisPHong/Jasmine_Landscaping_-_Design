@@ -15,7 +15,7 @@ const SplashPage = () => {
         <div className="splashImage-container">
           <div className="welcomeDiv">
             <h3 className="welcomeh3">Welcome to Jasmine</h3>
-            <h3 className="welcomeh3 secondh3">Landscaping & Design</h3>
+            <h3 className="welcomeh3 secondh3">Landscape & Design</h3>
             <button
               onClick={() => {
                 navigate("/contact");

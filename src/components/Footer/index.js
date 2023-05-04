@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="Footer-Container">
         <div className="left-container">
           <div className="Jasmine-Landscaping-Container foot-container">
-            <h3 className="font-link">Jasmine Landscaping & Design</h3>
+            <h3 className="font-link">Jasmine Landscape & Design</h3>
             <div className="JLD-container">
               <NavLink
                 to="/AboutUs"
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright-Container">
-              <h3 className="copyright"> © COPYRIGHT {new Date().getFullYear()} Jasmine Landscaping & Design - ALL RIGHTS RESERVED</h3>
+              <h3 className="copyright"> © COPYRIGHT {new Date().getFullYear()} Jasmine Landscape & Design - ALL RIGHTS RESERVED</h3>
 
         </div>
       </div>
