@@ -28,8 +28,8 @@
 .email-ptag {
   font-size: 13px;
   text-decoration: none;
-  color:rgb(112, 112, 112);
-  transition-duration: .3s;
+  color: rgb(112, 112, 112);
+  transition-duration: 0.3s;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -40,8 +40,8 @@
 .instagram-ptag {
   font-size: 13px;
   text-decoration: none;
-  color:rgb(112, 112, 112);
-  transition-duration: .3s;
+  color: rgb(112, 112, 112);
+  transition-duration: 0.3s;
   font-weight: bold;
   margin: 0;
 }
@@ -78,67 +78,81 @@
 
 .footer-links {
   text-decoration: none;
-    padding-top: 10px;
+  padding-top: 10px;
   font-size: 13px;
   font-weight: bold;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   color: rgb(112, 112, 112);
 }
 
 .footer-links:hover {
   color: rgb(212, 212, 212);
   padding-left: 10px;
-
 }
 
 .left-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .Support-Container {
   display: flex;
   flex-direction: column;
-
 }
 
 .font-link {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0px;
   color: rgb(212, 212, 212);
+  margin-top: 0px;
   /* border-bottom: 2px solid green; */
 }
 
-.copyright{
+.copyright {
   display: flex;
   flex-direction: column;
   font-size: 8px;
   margin: 0;
   color: rgb(212, 212, 212);
-
 }
 
-.copyright-Container{
+.copyright-Container {
   margin-top: 10px;
 }
 
-.Jasmine-Landscaping-Container{
-    display: flex;
-    flex-direction: column;
+.Jasmine-Landscaping-Container {
+  display: flex;
+  flex-direction: column;
 }
 
-.Social-Container{
-    display: flex;
-    flex-direction: column;
+.Social-Container {
+  display: flex;
+  flex-direction: column;
 }
 
-.foot-container{
-    margin-left: 40px;
-
+.foot-container {
+  margin-left: 40px;
 }
 
-.footboottest{
+.footboottest {
   color: white;
+}
+
+@media screen and (width <= 600px) {
+  .Footer-Container {
+    display: flex;
+    flex-direction: col;
+    width: 100vw;
+  }
+  .left-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot-container{
+    margin-bottom: 10px;
+  }
 }
