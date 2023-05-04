@@ -20,11 +20,25 @@ const AboutUs = () => {
       </div>
       <div className="design_container state_container">
         <h2>Design Stage</h2>
-        hello this is a test
+        What makes us different is a thorough process to ensure everything is planned out before any construction.  During our design phase, we make sure all the details get ironed out, essentially, reducing costly mistakes.
+
+Our design phase consists of the following:
+
+Consultation & Assessment
+
+Design Concepts & Budgeting
+
+3-D Design Presentations
+
+2-D Designs for HOA & City submission
+
+Estimation & Proposal
+
+Engineering & Permits
       </div>
       <div className="state_container">
         <h2>Build Stage</h2>
-        hello this is a test
+
       </div>
     </div>
   );

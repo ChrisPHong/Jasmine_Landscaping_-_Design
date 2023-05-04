@@ -6,7 +6,7 @@
   border-right: solid 3px #173c34;
 }
 
-.left-container {
+.left-containers {
   display: flex;
   flex-direction: row;
   justify-content: center;

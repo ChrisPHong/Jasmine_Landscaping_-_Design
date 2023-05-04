@@ -35,7 +35,7 @@ const NavBar = () => {
     <>
       <nav>
         <div className="navbar-container">
-          <div className="left-container">
+          <div className="left-containers">
             <NavLink
               to="/"
               exact={true}
@@ -45,7 +45,7 @@ const NavBar = () => {
               <img className="JLDLogo" src={JLDLogo} />
             </NavLink>
             <div className="jasmineLandscapingDesign">
-              Jasmine Landscaping & Design
+              Jasmine Landscape & Design
             </div>
           </div>
 

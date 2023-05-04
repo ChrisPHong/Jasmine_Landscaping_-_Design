@@ -10,7 +10,7 @@ import SplashGallery from "../SplashGallery";
 const SplashPage = () => {
   const navigate = useNavigate();
   return (
-    <div className="page-z">
+    <>
       <div className="Splash-full-container">
         <div className="splashImage-container">
           <div className="welcomeDiv">
@@ -28,10 +28,10 @@ const SplashPage = () => {
           </div>
         </div>
       </div>
-      <Contact />
+      {/* <Contact /> */}
       <SplashAbout />
       <SplashGallery />
-    </div>
+    </>
   );
 };
 
