@@ -28,7 +28,7 @@ const SplashPage = () => {
           </div>
         </div>
       </div>
-      {/* <Contact /> */}
+      <Contact />
       <SplashAbout />
       <SplashGallery />
     </>
