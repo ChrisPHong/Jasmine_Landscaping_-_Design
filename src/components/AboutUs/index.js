@@ -27,23 +27,43 @@ const AboutUs = () => {
         <img className="aboutPageImage" src={photo} />
       </div>
       <div className="x-container">
-        <div className="design_container state_container">
+        <div
+          className="design_container state_container"
+          onClick={() => {
+            navigate("/Contact");
+          }}
+        >
           <h2>Design Stage</h2>
-          <span>
-
-          What makes us different is a thorough process to ensure everything is
-          planned out before any construction. During our design phase, we make
-          sure all the details get ironed out, essentially, reducing costly
-          mistakes. Our design phase consists of the following: Consultation &
-          Assessment Design Concepts & Budgeting 3-D Design Presentations 2-D
-          Designs for HOA & City submission Estimation & Proposal Engineering &
-          Permits
+          <span className="AboutUs-stage-span">
+            During the design stage, we discuss the specific features, details
+            and create a design that is catered to your home. We iron out all
+            the details needed and provide an illustrated blueprint of your
+            design. Our design stage consists of the following:
+            <ul>
+              <li>Consultation & Assessment</li>
+              <li>Design Concepts</li>
+              <li>3-D Illustrated Presentation</li>
+              <li>2-D Designs for HOA & City Submission</li>
+              <li>Estimate & Proposal</li>
+              <li>Engineer & Permits</li>
+            </ul>
           </span>
         </div>
-        <div className="state_container">
+        <div
+          className="state_container"
+          onClick={() => {
+            navigate("/Contact");
+          }}
+        >
           <h2>Build Stage</h2>
-          <span>
-            
+          <span className="AboutUs-stage-span">
+            What makes us different is a thorough process to ensure everything
+            is planned out before any construction. During our design phase, we
+            make sure all the details get ironed out, essentially, reducing
+            costly mistakes. Our design phase consists of the following:
+            Consultation & Assessment Design Concepts & Budgeting 3-D Design
+            Presentations 2-D Designs for HOA & City submission Estimation &
+            Proposal Engineering & Permits
           </span>
         </div>
       </div>
