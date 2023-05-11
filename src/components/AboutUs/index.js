@@ -1,7 +1,7 @@
 import "./AboutUs.css";
-import photod from "./james.png";
 import twoDImage from "./twoDImage.png";
 import threeDImage from "./threeDImage.JPG";
+import phoneImage from './pic59.jpg'
 import photo from "./splashPagePhoto.png";
 import { useNavigate } from "react-router";
 
@@ -31,12 +31,13 @@ const AboutUs = () => {
           >
             Contact Us
           </button>
+        <img className="phoneImage" src={phoneImage} />
         </div>
         <img className="aboutPageImage" src={photo} />
       </div>
       <div className="x-container">
         <div className="y-container">
-          {/* <img className="twoDImage" src={threeDImage} /> */}
+
           <div
             className="design_container state_container"
             onClick={() => {
@@ -87,6 +88,7 @@ const AboutUs = () => {
       <div className="bottom-container">
 
       <img className="twoDImage" src={twoDImage} />
+      <div></div>
       <img className="threeImage" src={threeDImage} />
       </div>
     </div>
