@@ -4,9 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #006837; */
-  /* background-color: #173c34; */
-  /* background-color: #258e46; */
 }
 
 .AboutJLD-Container {
@@ -33,7 +30,6 @@
 }
 .state_container:hover {
   cursor: pointer;
-  /* background-color: #173c34; */
   background-color: #258e46;
   border: solid #006837 2px;
   color: white;
