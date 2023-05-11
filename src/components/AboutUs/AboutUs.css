@@ -1,5 +1,9 @@
 .Full-About-Container {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* background-color: #006837; */
   /* background-color: #173c34; */
   /* background-color: #258e46; */
@@ -25,6 +29,7 @@
   color: #173c34;
   padding: 20px;
   transition-duration: .3s;
+  height: 300px;
 }
 .state_container:hover {
   cursor: pointer;
@@ -45,6 +50,24 @@
   font-weight:600;
 }
 
+.twoDImage{
+  max-width: 400px;
+}
+
+.threeImage{
+  max-width: 600px;
+}
+.y-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
 @media  screen and (width <= 900px) {
 
   .x-container{
@@ -53,124 +76,3 @@
   }
 
 }
-/* .AboutUs-p-tag {
-  text-decoration: none;
-  color: black;
-}
-.intro {
-  font-family: sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.About-Us-Container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  background-color: rgb(1, 136, 95);
-  padding-bottom: 20px;
-}
-
-.AboutUs-p-tag {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-.Name-button-div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-contact {
-  background: #6feb63;
-
-  border: none;
-  color: black;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 5px;
-  transition-duration: 0.5s;
-}
-
-.button-contact:hover {
-  cursor: pointer;
-  background: rgb(27, 27, 27);
-  color: white;
-  padding: 10px 35px;
-}
-
-.selfie {
-  border-radius: 50%;
-  width: 300px;
-}
-
-.Below-AboutUs-Container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(1, 136, 95);
-}
-
-.company-description {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutusPicture {
-  max-width: 500px;
-  border-radius: 5px;
-}
-
-.picture-p-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 5px 10px;
-}
-
-.p-description {
-  max-width: 500px;
-  margin: 10px 10px;
-  font-family: sans-serif;
-}
-
-.Description-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.Estimate-Button {
-  background: #6feb63;
-
-  border: none;
-  color: black;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 20px 50px;
-  border-radius: 5px;
-  transition-duration: 0.5s;
-  margin: 20px;
-}
-
-.Estimate-Button:hover {
-  cursor: pointer;
-  background: rgb(27, 27, 27);
-  color: white;
-  padding: 20px 60px;
-} */

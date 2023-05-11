@@ -1,7 +1,7 @@
 import "./AboutUs.css";
 import photod from "./james.png";
-import barbPhoto from "./pic58.jpg";
-import landPhoto from "./pic59.jpg";
+import twoDImage from "./twoDImage.png";
+import threeDImage from "./threeDImage.JPG";
 import photo from "./splashPagePhoto.png";
 import { useNavigate } from "react-router";
 
@@ -23,49 +23,71 @@ const AboutUs = () => {
             materials, and plant selection. Contact us when you're interested in
             improving your home!
           </p>
+          <button
+            className="learnMoreButton"
+            onClick={() => {
+              navigate("/Contact");
+            }}
+          >
+            Contact Us
+          </button>
         </div>
         <img className="aboutPageImage" src={photo} />
       </div>
       <div className="x-container">
-        <div
-          className="design_container state_container"
-          onClick={() => {
-            navigate("/Contact");
-          }}
-        >
-          <h2>Design Stage</h2>
-          <span className="AboutUs-stage-span">
-            During the design stage, we discuss the specific features, details
-            and create a design that is catered to your home. We iron out all
-            the details needed and provide an illustrated blueprint of your
-            design. Our design stage consists of the following:
+        <div className="y-container">
+          {/* <img className="twoDImage" src={threeDImage} /> */}
+          <div
+            className="design_container state_container"
+            onClick={() => {
+              navigate("/Contact");
+            }}
+          >
+            <h2>Design Stage</h2>
+            <span className="AboutUs-stage-span">
+              During the design stage, we discuss the specific features, details
+              and create a design that is catered to your home. We iron out all
+              the details needed and provide an illustrated blueprint of your
+              design. Our design stage consists of the following:
+              <ul>
+                <li>Consultation & Assessment</li>
+                <li>Design Concepts</li>
+                <li>3-D Illustrated Presentation</li>
+                <li>2-D Designs for HOA & City Submission</li>
+                <li>Estimate & Proposal</li>
+                <li>Engineer & Permits</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div className="y-container">
+          <div
+            className="state_container"
+            onClick={() => {
+              navigate("/Contact");
+            }}
+          >
+            <h2>Build Stage</h2>
+            <span className="AboutUs-stage-span">
+              We have streamlined the landscaping build stage by breaking it
+              down into fundamental phases that promote optimal productivity and
+              efficiency:
+            </span>
             <ul>
-              <li>Consultation & Assessment</li>
-              <li>Design Concepts</li>
-              <li>3-D Illustrated Presentation</li>
-              <li>2-D Designs for HOA & City Submission</li>
-              <li>Estimate & Proposal</li>
-              <li>Engineer & Permits</li>
+              <li>Site Demolition</li>
+              <li>Underground Utility Installation & Inspections</li>
+              <li>Leveling and Grading</li>
+              <li>Foundation Establishment</li>
+              <li>Application of Finishing Touches</li>
+              <li>Final Inspections to ensure Quality Assurance</li>
             </ul>
-          </span>
+          </div>
         </div>
-        <div
-          className="state_container"
-          onClick={() => {
-            navigate("/Contact");
-          }}
-        >
-          <h2>Build Stage</h2>
-          <span className="AboutUs-stage-span">
-            What makes us different is a thorough process to ensure everything
-            is planned out before any construction. During our design phase, we
-            make sure all the details get ironed out, essentially, reducing
-            costly mistakes. Our design phase consists of the following:
-            Consultation & Assessment Design Concepts & Budgeting 3-D Design
-            Presentations 2-D Designs for HOA & City submission Estimation &
-            Proposal Engineering & Permits
-          </span>
-        </div>
+      </div>
+      <div className="bottom-container">
+
+      <img className="twoDImage" src={twoDImage} />
+      <img className="threeImage" src={threeDImage} />
       </div>
     </div>
   );
