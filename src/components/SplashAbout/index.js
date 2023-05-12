@@ -13,7 +13,7 @@ const SplashAbout = () => {
           <h3 className="AboutJLDh3">About JLD</h3>
           <p className="about-p-tag">
             Jasmine Landscape & Design was established in 1993 and has since
-            built and designed indoor and outdoor live spaces. We have worked on
+            built and designed outdoor live spaces. We have worked on
             patios, pools, barbecues, and many more features for your frontyard
             and backyard needs! Click the button to learn more about Jasmine Landscape & Design!
           </p>

@@ -14,7 +14,7 @@ const AboutUs = () => {
           <h3 className="AboutJLDh3">About JLD</h3>
           <p className="about-p-tag">
             Jasmine Landscape & Design was established in 1993 and has since
-            built and designed indoor and outdoor live spaces. Our company
+            built and designed outdoor live spaces. Our company
             believes that the outdoors is an extension of our homes and should
             not be neglected. We seek to tackle each project differently based
             on the lifestyle, taste and preferences of our clients. We work
